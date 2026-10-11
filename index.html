@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Rikoo.Dev</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- External Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { darkBg: '#0b0f19', darkCard: '#111827', darkBorder: '#1f2937' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0b0f19] text-slate-200 font-sans antialiased selection:bg-cyan-500 selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="font-extrabold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500 flex items-center gap-2">
+                <i class="fa-solid fa-code text-cyan-400"></i> Rikoo.Dev
+            </a>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="text-cyan-400 transition">Profil</a>
+                <a href="pendidikan.html" class="hover:text-cyan-400 transition">Pendidikan</a>
+                <a href="organisasi.html" class="hover:text-cyan-400 transition">Organisasi</a>
+                <a href="kepanitiaan.html" class="hover:text-cyan-400 transition">Kepanitiaan</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="hidden sm:inline-flex bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm px-5 py-2.5 rounded-xl transition shadow-lg shadow-cyan-500/20">
+                    Hubungi Saya
+                </a>
+                <button id="mobile-menu-btn" aria-label="Menu" class="md:hidden text-slate-300 p-2 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#111827] border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="block py-2 text-cyan-400 font-medium">Profil</a>
+            <a href="pendidikan.html" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Pendidikan</a>
+            <a href="organisasi.html" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Organisasi</a>
+            <a href="kepanitiaan.html" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Kepanitiaan</a>
+        </div>
+    </header>
+
+    <!-- Section Profil -->
+    <section id="profil" class="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden min-h-screen flex items-center">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-80 h-80 bg-violet-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+                <!-- Photo -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-violet-500 to-fuchsia-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="relative w-48 h-48 sm:w-60 sm:h-60 rounded-3xl overflow-hidden border-2 border-slate-700 bg-slate-900">
+                        <img src="src/Profil.jpeg" alt="Foto Profil" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Bio -->
+                <div class="flex-1 text-center md:text-left">
+                    <span class="inline-flex items-center gap-2 bg-slate-800/80 text-cyan-400 text-xs font-semibold px-4 py-2 rounded-full mb-4 border border-cyan-500/30 backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span> Mahasiswa
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4">
+                        Rikoo
+                    </h1>
+                    <p class="text-slate-400 text-base sm:text-lg leading-relaxed mb-6 max-w-2xl">
+                        Halo, Saya adalah seorang mahasiswa Program Studi Teknologi Rekayasa Perangkat Lunak Universitas Pendidikan Ganesha yang tertarik pada pengembangan Web, pengembangan Aplikasi Mobile dan organisasi kemahasiswaan.
+                    </p>
+
+                    <!-- Social Media Links -->
+                    <div class="flex items-center justify-center md:justify-start gap-4">
+                        <a href="https://www.instagram.com/rikoo.icikiwir" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 text-slate-300 hover:bg-pink-600/20 hover:text-pink-400 hover:border-pink-500/50 flex items-center justify-center shadow-lg transition duration-300 group" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram text-xl group-hover:scale-110 transition"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/komang-adi-armawan-0aaa05376?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 text-slate-300 hover:bg-blue-600/20 hover:text-blue-400 hover:border-blue-500/50 flex items-center justify-center shadow-lg transition duration-300 group" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in text-xl group-hover:scale-110 transition"></i>
+                        </a>
+                        <a href="https://github.com/komangadiarmawan-hub" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 hover:text-cyan-400 hover:border-cyan-500/50 flex items-center justify-center shadow-lg transition duration-300 group" aria-label="GitHub">
+                            <i class="fa-brands fa-github text-xl group-hover:scale-110 transition"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#070a12] border-t border-slate-800/80 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <a href="index.html" class="font-extrabold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500 flex items-center justify-center md:justify-start gap-2">
+                    <i class="fa-solid fa-code text-cyan-400"></i> Rikoo.Dev
+                </a>
+                <p class="text-slate-400 text-sm mt-2">&copy; Portfolio By Rikoo.Dev</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://www.instagram.com/rikoo.icikiwir" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-pink-400 hover:border-pink-500/50 flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/komang-adi-armawan-0aaa05376?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-blue-400 hover:border-blue-500/50 flex items-center justify-center transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/komangadiarmawan-hub" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 flex items-center justify-center transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>

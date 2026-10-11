@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepanitiaan - Rikoo.Dev</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- External Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { darkBg: '#0b0f19', darkCard: '#111827', darkBorder: '#1f2937' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0b0f19] text-slate-200 font-sans antialiased selection:bg-cyan-500 selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="font-extrabold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500 flex items-center gap-2">
+                <i class="fa-solid fa-code text-cyan-400"></i> Rikoo.Dev
+            </a>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-cyan-400 transition">Profil</a>
+                <a href="pendidikan.html" class="hover:text-cyan-400 transition">Pendidikan</a>
+                <a href="organisasi.html" class="hover:text-cyan-400 transition">Organisasi</a>
+                <a href="kepanitiaan.html" class="text-cyan-400 transition">Kepanitiaan</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="hidden sm:inline-flex bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm px-5 py-2.5 rounded-xl transition shadow-lg shadow-cyan-500/20">
+                    Hubungi Saya
+                </a>
+                <button id="mobile-menu-btn" aria-label="Menu" class="md:hidden text-slate-300 p-2 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#111827] border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Profil</a>
+            <a href="pendidikan.html" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Pendidikan</a>
+            <a href="organisasi.html" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Organisasi</a>
+            <a href="kepanitiaan.html" class="block py-2 text-cyan-400 font-medium">Kepanitiaan</a>
+        </div>
+    </header>
+
+    <!-- Section Kepanitiaan -->
+    <section id="kepanitiaan" class="py-32 md:py-40 bg-[#0d1322] min-h-screen">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-emerald-400 text-xs font-bold tracking-widest uppercase mb-2 block">Pengalaman Kegiatan Kepanitiaan</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Kepanitiaan</h2>
+                <p class="text-slate-400 mt-2 text-sm sm:text-base">Pengalaman dalam mengeksekusi berbagai kegiatan penting dengan galeri dokumentasi di setiap kepanitiaan.</p>
+            </div>
+
+            <!-- Grid 4 Kepanitiaan -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Kepanitiaan 1 -->
+                <div class="bg-[#111827] rounded-3xl border border-slate-800 p-6 sm:p-8 hover:border-cyan-500/40 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-cyan-400 bg-cyan-950/80 border border-cyan-800 px-3 py-1 rounded-full">Maret 2026</span>
+                            <span class="text-xs font-semibold text-slate-300 bg-slate-800 px-3 py-1 rounded-md">Anggota Sie Perlengkapan</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">MISION #7</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Berperan sebagai anggota Sie Perlengkapan dalam kegiatan MISION #7, bertanggung jawab atas pengelolaan dan penyediaan perlengkapan acara untuk memastikan kelancaran jalannya kegiatan.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-camera text-cyan-400"></i> Dokumentasi Kegiatan
+                        </h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="rounded-xl overflow-hidden border border-slate-800 h-32 group relative">
+                                <img src="src/FOTBAR 1.jpeg" alt="Foto Bersama Kegiatan MISION #7" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                            <div class="rounded-xl overflow-hidden border border-slate-800 h-32 group relative">
+                                <img src="src/FOTBAR PERLENG 1.jpeg" alt="Foto Bersama Sie Perlengkapan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kepanitiaan 2 -->
+                <div class="bg-[#111827] rounded-3xl border border-slate-800 p-6 sm:p-8 hover:border-violet-500/40 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-violet-400 bg-violet-950/80 border border-violet-800 px-3 py-1 rounded-full">Mei 2026</span>
+                            <span class="text-xs font-semibold text-slate-300 bg-slate-800 px-3 py-1 rounded-md">Sekretaris Sie TKP</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Suksesi Forum Komunikasi KIP-K Undiksha</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Berperan sebagai Sekretaris Sie TKP dalam kegiatan Suksesi Forum Komunikasi KIP-K Undiksha, bertanggung jawab atas pengelolaan penyediaan perlengkapan acara dan mengelola tempat, keamanan, transportasi untuk memastikan kelancaran jalannya acara.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-camera text-violet-400"></i> Dokumentasi Kegiatan
+                        </h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="rounded-xl overflow-hidden border border-slate-800 h-32 group relative">
+                                <img src="src/SUKSESI.jpeg" alt="Foto Bersama" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                            <div class="rounded-xl overflow-hidden border border-slate-800 h-32 group relative">
+                                <img src="src/SUKSESI 2.jpeg" alt="Foto Bersama Sie TKP" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kepanitiaan 3 -->
+                <div class="bg-[#111827] rounded-3xl border border-slate-800 p-6 sm:p-8 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-emerald-400 bg-emerald-950/80 border border-emerald-800 px-3 py-1 rounded-full">Juli 2026</span>
+                            <span class="text-xs font-semibold text-slate-300 bg-slate-800 px-3 py-1 rounded-md">Sekretaris Sie TKP</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Rapat Kerja & Pelantikan Fungsionaris Forum Komunikasi KIP-K Undiksha Masa Bakti 2026/2027</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Berperan sebagai Sekretaris Sie TKP dalam kegiatan Rapat Kerja & Pelantikan Fungsionaris Forum Komunikasi KIP-K Undiksha Masa Bakti 2026/2027, bertanggung jawab atas pengelolaan penyediaan perlengkapan acara dan mengelola tempat, keamanan, transportasi untuk memastikan kelancaran jalannya acara.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-camera text-emerald-400"></i> Dokumentasi Kegiatan
+                        </h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="rounded-xl overflow-hidden border border-slate-800 h-32 group relative">
+                                <img src="src/RAKER.jpeg" alt="Raker" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                            <div class="rounded-xl overflow-hidden border border-slate-800 h-32 group relative">
+                                <img src="src/RAKER 2.jpeg" alt="Raker" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kepanitiaan 4 -->
+                <div class="bg-[#111827] rounded-3xl border border-slate-800 p-6 sm:p-8 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-amber-400 bg-amber-950/80 border border-amber-800 px-3 py-1 rounded-full">Oktober 2026</span>
+                            <span class="text-xs font-semibold text-slate-300 bg-slate-800 px-3 py-1 rounded-md">Koordinator Sie TKP</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Malam Keakraban Mahasiswa Baru (MKMB) Tahun 2026</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Berperan sebagai Koordinator Sie TKP dalam kegiatan Malam Keakraban Mahasiswa Baru (MKMB) Tahun 2026, bertanggung jawab atas pengelolaan penyediaan perlengkapan acara dan mengelola tempat, keamanan, transportasi untuk memastikan kelancaran jalannya acara.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-camera text-amber-400"></i> Dokumentasi Kegiatan
+                        </h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="rounded-xl overflow-hidden border border-slate-800 h-32 group relative">
+                                <img src="src/MKMB 2026.jpeg" alt="Foto Bersama Sie TKP" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                            <div class="rounded-xl overflow-hidden border border-slate-800 h-32 group relative">
+                                <img src="src/MKMB 2.jpeg" alt="Foto Kegiatan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#070a12] border-t border-slate-800/80 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <a href="index.html" class="font-extrabold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500 flex items-center justify-center md:justify-start gap-2">
+                    <i class="fa-solid fa-code text-cyan-400"></i> Rikoo.Dev
+                </a>
+                <p class="text-slate-500 text-sm mt-1">&copy; Portfolio By Rikoo.Dev</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://www.instagram.com/rikoo.icikiwir" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-pink-400 hover:border-pink-500/50 flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/komang-adi-armawan-0aaa05376?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-blue-400 hover:border-blue-500/50 flex items-center justify-center transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/komangadiarmawan-hub" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 flex items-center justify-center transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
